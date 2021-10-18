@@ -23,10 +23,6 @@
 # questions.
 #
 
-# ===========================================================================
-# (c) Copyright IBM Corp. 2021, 2021 All Rights Reserved
-# ===========================================================================
-
 AC_DEFUN_ONCE([LIB_SETUP_INIT],
 [
 
@@ -837,9 +833,9 @@ AC_DEFUN_ONCE([LIB_SETUP_MISC_LIBS],
   AC_MSG_CHECKING([for which zlib to use])
 
   DEFAULT_ZLIB=bundled
-  if test "x$OPENJDK_TARGET_OS" = xmacosx -o "x$OPENJDK_TARGET_OS" = xaix; then
+  if test "x$OPENJDK_TARGET_OS" = xmacosx; then
     #
-    # On macosx and aix default is system...on others default is
+    # On macosx default is system...on others default is
     #
     DEFAULT_ZLIB=system
   fi

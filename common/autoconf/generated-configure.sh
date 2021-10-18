@@ -4047,10 +4047,6 @@ fi
 # questions.
 #
 
-# ===========================================================================
-# (c) Copyright IBM Corp. 2021, 2021 All Rights Reserved
-# ===========================================================================
-
 
 
 
@@ -49033,9 +49029,9 @@ fi
 $as_echo_n "checking for which zlib to use... " >&6; }
 
   DEFAULT_ZLIB=bundled
-  if test "x$OPENJDK_TARGET_OS" = xmacosx -o "x$OPENJDK_TARGET_OS" = xaix; then
+  if test "x$OPENJDK_TARGET_OS" = xmacosx; then
     #
-    # On macosx and aix default is system...on others default is
+    # On macosx default is system...on others default is
     #
     DEFAULT_ZLIB=system
   fi
