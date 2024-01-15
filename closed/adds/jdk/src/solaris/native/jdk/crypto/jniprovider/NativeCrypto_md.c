@@ -43,10 +43,6 @@ void * load_crypto_library(jboolean traceEnabled)
     // Library names for OpenSSL 3.x, 1.1.1, 1.1.0, 1.0.2 and symbolic links
     static const char * const libNames[] = {
 #if defined(_AIX)
-    "libcrypto.a(libcrypto64.so.3)",
-    "libcrypto64.so.3",
-    "libcrypto.a(libcrypto.so.3)",
-    "libcrypto.so.3",
     "libcrypto.a(libcrypto64.so.1.1)",
     "libcrypto.so.1.1",
     "libcrypto.so.1.0.0",
